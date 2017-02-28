@@ -15,7 +15,7 @@ var client     = mqtt.connect('tcp://iot.eclipse.org');
 
 // MQTT onConnect function
 client.on('connect', function () {
-   	 client.subscribe('zuhry');
+   	 client.subscribe('yahalo');
      client.publish('yahalo', 'Hello yukinon');
 });
 
