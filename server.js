@@ -16,7 +16,7 @@ var client     = mqtt.connect('tcp://iot.eclipse.org');
 // MQTT onConnect function
 client.on('connect', function () {
    	 client.subscribe('yahalo');
-     client.publish('yahalo', 'Hello yukinon');
+     client.publish('yahalo', 'sasuga');
 });
 
 // Initialize the MySQL database connectivity
