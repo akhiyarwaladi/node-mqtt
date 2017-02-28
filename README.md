@@ -10,3 +10,4 @@ A basic example of MQTT protocol functions and persist data in MySQL via Node Se
 * Install dependencies : npm install  
 * Start the server : node server.js
 
+# node-mqtt
