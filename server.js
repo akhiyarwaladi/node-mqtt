@@ -10,13 +10,17 @@ var mysql      = require('mysql');
 var bodyParser = require("body-parser");
 var mqtt       = require('mqtt');
 
+var broker     = 'localhost';
+var port       = 1883;
+var topic      = 'test/mqtt'
 // Initialize the mqtt client
-var client     = mqtt.connect('tcp://iot.eclipse.org');
+//var client     = mqtt.connect('tcp://iot.eclipse.org');
+var client     = mqtt.createClient(port, broker);
 
 // MQTT onConnect function
 client.on('connect', function () {
-   	 client.subscribe('yahalo');
-     client.publish('yahalo', 'sasuga');
+   	 client.subscribe(topic);
+     client.publish(topic, 'uvovuevuevuevueuveueuvueuveuvuvueuveuvueuveuvue');
 });
 
 // Initialize the MySQL database connectivity
